@@ -1,0 +1,19 @@
+:jbake-title: Architekturentscheidungen
+:jbake-type: page_toc
+:jbake-status: published
+:jbake-menu: arc42
+:jbake-order: 9
+:filename: \modules\ROOT\pages\09_architecture_decisions.adoc
+ifndef::imagesdir[:imagesdir: ../assets/images]
+
+ifndef::optimize-content[]
+:toc:
+endif::optimize-content[]
+
+
+[[section-design-decisions]]
+== Architekturentscheidungen
+
+ifdef::arc42help[]
+
+endif::arc42help[]

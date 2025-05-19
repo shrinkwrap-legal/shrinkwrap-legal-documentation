@@ -1,0 +1,45 @@
+:jbake-title: Einführung und Ziele
+:jbake-type: page_toc
+:jbake-status: published
+:jbake-menu: arc42
+:jbake-order: 1
+:filename: \modules\ROOT\pages\01_introduction_and_goals.adoc
+ifndef::imagesdir[:imagesdir: ../assets/images]
+
+ifndef::optimize-content[]
+:toc:
+endif::optimize-content[]
+
+
+[[section-introduction-and-goals]]
+==	Einführung und Ziele
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+=== Aufgabenstellung
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+=== Qualitätsziele
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+=== Stakeholder
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+[cols="1,1,2" options="header"]
+|===
+|Rolle |Kontakt |Erwartungshaltung
+| NetIdee |  |
+| Thoms Schreiber | thomas@outlook.at |
+| Bernhard Jungwirth | bernhard@it.jungwirth.me  |
+|===

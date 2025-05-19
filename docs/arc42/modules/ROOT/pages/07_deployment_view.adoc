@@ -1,0 +1,53 @@
+:jbake-title: Verteilungssicht
+:jbake-type: page_toc
+:jbake-status: published
+:jbake-menu: arc42
+:jbake-order: 7
+:filename: \modules\ROOT\pages\07_deployment_view.adoc
+ifndef::imagesdir[:imagesdir: ../assets/images]
+
+ifndef::optimize-content[]
+:toc:
+endif::optimize-content[]
+
+
+[[section-deployment-view]]
+== Verteilungssicht
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+=== Infrastruktur Ebene 1
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+_**<Übersichtsdiagramm>**_
+
+Begründung:: _<Erläuternder Text>_
+
+Qualitäts- und/oder Leistungsmerkmale:: _<Erläuternder Text>_
+
+Zuordnung von Bausteinen zu Infrastruktur:: _<Beschreibung der Zuordnung>_
+
+=== Infrastruktur Ebene 2
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+==== _<Infrastrukturelement 1>_
+
+_<Diagramm + Erläuterungen>_
+
+==== _<Infrastrukturelement 2>_
+
+_<Diagramm + Erläuterungen>_
+
+...
+
+==== _<Infrastrukturelement n>_
+
+_<Diagramm + Erläuterungen>_
