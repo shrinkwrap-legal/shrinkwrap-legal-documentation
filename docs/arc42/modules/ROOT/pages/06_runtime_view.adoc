@@ -18,15 +18,10 @@ ifdef::arc42help[]
 
 endif::arc42help[]
 
-=== _<Bezeichnung Laufzeitszenario 1>_
+=== Automatische Aufbereitung neuer Judikate
 
-*  <hier Laufzeitdiagramm oder Ablaufbeschreibung einfügen>
-*  <hier Besonderheiten bei dem Zusammenspiel der Bausteine in diesem Szenario erläutern>
+--> Sequenzdiagramm
 
-=== _<Bezeichnung Laufzeitszenario 2>_
+=== Anzeigen der aufbereiteten Judikate in der Chrome Extension
 
-...
 
-=== _<Bezeichnung Laufzeitszenario n>_
-
-...

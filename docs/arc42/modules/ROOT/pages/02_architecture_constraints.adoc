@@ -17,3 +17,26 @@ endif::optimize-content[]
 ifdef::arc42help[]
 
 endif::arc42help[]
+
+=== Technische Randbedingungen
+
+=== Organisatorische Randbedingungen
+
+
+|===
+| |Bedingung |Beschreibung
+
+| OC1
+| Team
+| Thomas Schreiber, Bernhard Jungwirth
+
+| OC2
+| Zeitraum
+|
+
+| OC3
+| Testing
+|
+|===
+
+

@@ -17,3 +17,8 @@ endif::optimize-content[]
 ifdef::arc42help[]
 
 endif::arc42help[]
+
+
+=== Risiken
+
+==== Verarbeitung der Judikate

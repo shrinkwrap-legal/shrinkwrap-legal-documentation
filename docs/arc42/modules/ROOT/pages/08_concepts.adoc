@@ -18,16 +18,14 @@ ifdef::arc42help[]
 
 endif::arc42help[]
 
-=== _<Konzept 1>_
+=== Datenbankmodell
 
-_<Erklärung>_
 
-=== _<Konzept 2>_
+=== Benutzeroberfläche
 
-_<Erklärung>_
 
-...
+=== HTML Vorverarbeitung
 
-=== _<Konzept n>_
+=== OpenAI Prompting
 
-_<Erklärung>_
+

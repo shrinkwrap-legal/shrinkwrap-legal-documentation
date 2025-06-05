@@ -14,11 +14,19 @@ endif::optimize-content[]
 [[section-introduction-and-goals]]
 ==	Einführung und Ziele
 
+image:shrinkwrap.svg[]
+
+
+Open API
+https://medium.com/@georgeberar/springboot-generate-openapi-document-during-test-phase-a3a793a50dfe
+
 ifdef::arc42help[]
 
 endif::arc42help[]
 
 === Aufgabenstellung
+
+Shrinkwrap Legal ist eine Browser Extension für Chrome, welche Judikate aus dem RIS (Rechtsinformationssystem) der Republik Österreich zusammenfasst.
 
 ifdef::arc42help[]
 

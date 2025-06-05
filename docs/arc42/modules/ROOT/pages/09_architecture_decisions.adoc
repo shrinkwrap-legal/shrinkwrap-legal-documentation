@@ -17,3 +17,16 @@ endif::optimize-content[]
 ifdef::arc42help[]
 
 endif::arc42help[]
+
+
+=== Entscheidung 1: Verwendung von OpenAI für die Aufbereitung von Judikaten
+
+=== Entscheidung 2: Verwendung einer PostgreSQL-Datenbank
+
+Alternative wäre auch die Ablage in Dateien gewesen
+
+=== Entscheidung 3: Implementierung einer Chrome Extension für die Anzeige der aufbereiteten Judikate
+
+Alternative wäre eine eigene Webanwendung
+
+=== Entscheidung 4: Nutzung von Docker für die Containerisierung der Anwendung

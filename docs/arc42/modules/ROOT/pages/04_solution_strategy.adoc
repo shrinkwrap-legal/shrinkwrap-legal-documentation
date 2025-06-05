@@ -17,3 +17,15 @@ endif::optimize-content[]
 ifdef::arc42help[]
 
 endif::arc42help[]
+
+
+
+Die Hauptaufgabe des Systems ist es, Judikate über die RIS Schnittstelle zu laden und eine Analyse der Inhalte durchzuführen.
+
+
+=== Text Processing Pipeline zeichnen
+
+** Download HTML von RIS
+** HTML cleanup durchführen
+** HTML Data Extraction
+** Umwandeln in normalen Text
