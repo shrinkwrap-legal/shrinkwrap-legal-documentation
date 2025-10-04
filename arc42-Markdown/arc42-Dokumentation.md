@@ -1,38 +1,18 @@
-# 
+# Shrinkwrap.Legal
 
-**Über arc42**
-
-arc42, das Template zur Dokumentation von Software- und
-Systemarchitekturen.
-
-Template Version 9.0-DE. (basiert auf der AsciiDoc Version), Juli 2025
-
-Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
-contributors. Siehe <https://arc42.org>.
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-> [!NOTE]
-> Diese Version des Templates enthält Hilfen und Erläuterungen. Sie
-> dient der Einarbeitung in arc42 sowie dem Verständnis der Konzepte.
-> Für die Dokumentation eigener System verwenden Sie besser die *plain*
-> Version.
-
-</div>
+![Shrinkwrap Logo](./images/shrinkwrap.svg)
 
 # Einführung und Ziele
 
-<div class="sidebar">
 
-<div class="title">
+## Aufgabenstellung
 
-</div>
+- kurzer Textg
+- eventuell Use-Case
 
- 
+Shrinkwrap Legal ist eine Browser Extension für Chrome, Edge und Firefox, welche Judikate aus dem RIS (Rechtsinformationssystem) der Republik Österreich vereinfacht aufbereitet und zusammenfasst. Diese Datenaufbereitung erfolgt mit großen Sprachmodellen (LLM) über die OpenAI Schnittstelle.
+
+
 ## Qualitätsziele
 
 1. Performance und Skalierbarkeit 
@@ -45,156 +25,24 @@ contributors. Siehe <https://arc42.org>.
  4. Wartbarkeit und Entwicklungsfähigkeit 
 
 
-</div>
-
-## Aufgabenstellung
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Inhalt
-
-</div>
-
-Kurzbeschreibung der fachlichen Aufgabenstellung, treibenden Kräfte,
-Extrakt (oder Abstract) der Anforderungen. Verweis auf (hoffentlich
-vorliegende) Anforderungsdokumente (mit Versionsbezeichnungen und
-Ablageorten).
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Motivation
-
-</div>
-
-Die Judikate können sehr lanbg und umständlich zu lesen sein. 
-TODO aus den Blogs wieter schreiben 
-
-
-Aus Sicht der späteren Nutzung ist die Unterstützung einer fachlichen
-Aufgabe oder Verbesserung der Qualität der eigentliche Beweggrund, ein
-neues System zu schaffen oder ein bestehendes zu modifizieren.
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Form
-
-</div>
-
-Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form.
-Sofern vorhanden, sollte die Aufgabenstellung Verweise auf die
-entsprechenden Anforderungsdokumente enthalten.
-
-</div>
-
-Halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit
-und Redundanzfreiheit gegeneinander ab.
-
-<div class="formalpara">
-
-<div class="title">
-
-Weiterführende Informationen
-
-</div>
-
-Siehe [Anforderungen und Ziele](https://docs.arc42.org/section-1/) in
-der online-Dokumentation (auf Englisch!).
-
-</div>
-
-</div>
-
-## Qualitätsziele
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Inhalt
-
-</div>
-
-Shrinkwrap Legal ist eine Browser Extension für Chrome, Edge und Firefox, welche Judikate aus dem RIS (Rechtsinformationssystem) der Republik Österreich vereinfacht aufbereitet und zusammenfasst. Diese Datenaufbereitung erfolgt mit großen Sprachmodellen (LLM) über die OpenAI Schnittstelle.
-
-</div>
 
 Hier ein Überblick möglicher Themen (basierend auf dem ISO 25010
 Standard):
-
+<div>
 <figure>
 <img src="images/01_2_iso-25010-topics-EN-2023.drawio.png"
 alt="Kategorien von Qualitätsanforderungen" />
 </figure>
-
-<div class="formalpara">
-
-<div class="title">
-
-Motivation
-
 </div>
 
-Weil Qualitätsziele grundlegende Architekturentscheidungen oft
-maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder relevanten
-Qualitätsziele kennen, möglichst konkret und operationalisierbar.
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Form
-
-</div>
-
-Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten
-Szenarien, geordnet nach Prioritäten.
-
-</div>
-
-</div>
 
 ## Stakeholder
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
 
 | Person/Organisation | Kontakt | Rolle | Erwartungshaltung |
 |----------|----------|----------|----------|
 | NetIdee |  | Organisation Fördergeber |  |
 | Thoms Schreiber | thomas@outlook.at |  |  |
 | Bernhard Jungwirth | bernhard@it.jungwirth.me  | Software Entwickler |  |
-
-
-</div>
-
 
 
 # Randbedingungen
@@ -1028,3 +876,16 @@ In Kurzform (bevorzugt im Q42-Modell):
 | Spring Boot | Technik |  | Framework zum Entwickeln von Webanwendungen/Backends in JAVA |
 | JAVA | Technik |  | Programmiersprache |
 | Chrome Extension | Technik |  | <https://developer.chrome.com/docs/extensions?hl=de>  |
+
+
+
+
+**Über arc42**
+
+arc42, das Template zur Dokumentation von Software- und
+Systemarchitekturen.
+
+Template Version 9.0-DE. (basiert auf der AsciiDoc Version), Juli 2025
+
+Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
+contributors. Siehe <https://arc42.org>.
