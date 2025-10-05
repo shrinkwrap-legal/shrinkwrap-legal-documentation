@@ -40,9 +40,9 @@ alt="Kategorien von Qualitätsanforderungen" />
 
 | Person/Organisation | Kontakt | Rolle | Erwartungshaltung |
 |----------|----------|----------|----------|
-| NetIdee |  | Organisation Fördergeber |  |
-| Thoms Schreiber | thomas@outlook.at |  |  |
-| Bernhard Jungwirth | bernhard@it.jungwirth.me  | Software Entwickler |  |
+| NetIdee |  | Organisation Fördergeber | <ul><li>Open Source Beitrag</li><li>Blogeinträge</li>  |
+| Thoms Schreiber | thomas@outlook.at | Software Entwickler |  |
+| Bernhard Jungwirth | bernhard@it.jungwirth.me  | Software Entwickler | <ul><li>Erfahrung mit OpenAI und LLM sammeln</li><li></li></ul> |
 
 
 # Randbedingungen
@@ -68,7 +68,8 @@ online-Dokumentation (auf Englisch!).
 
 </div>
 
-# Kontextabgrenzung#
+# Kontextabgrenzung
+
 - fachliche und technische Schnittstellen 
 - Abgrenzung zu Kommunikationspartner und Nachbarsysteme, 
 - RIS Open Data Aufruf
@@ -125,17 +126,12 @@ online-Dokumentation (auf Englisch!).
 
 # Bausteinsicht
 
-
 Module, Komponenten, Subsysteme, Klassen, Schnittstellen, Pakete, Bibliotheken, Frameworks 
 
+## Ebene 1 Gesamtsystem
 
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
+**Ebene 1** ist die Whitebox-Beschreibung des Gesamtsystems, zusammen
+mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
 
 ```mermaid
 C4Component
@@ -164,113 +160,10 @@ C4Component
     UpdateRelStyle(api, openai, $offsetX="40", $offsetY="-40")
 ```
 
-**Ebene 1** ist die Whitebox-Beschreibung des Gesamtsystems, zusammen
-mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
+### Chrome Extension 
 
-**Ebene 2** zoomt in einige Bausteine der Ebene 1 hinein. Sie enthält
-somit die Whitebox-Beschreibungen ausgewählter Bausteine der Ebene 1,
-jeweils zusammen mit Blackbox-Beschreibungen darin enthaltener
-Bausteine.
+### Spring Boot Service 
 
-**Ebene 3** zoomt in einige Bausteine der Ebene 2 hinein, usw.
-
-<div class="formalpara">
-
-<div class="title">
-
-Weiterführende Informationen
-
-</div>
-
-Siehe [Bausteinsicht](https://docs.arc42.org/section-5/) in der
-online-Dokumentation (auf Englisch!).
-
-</div>
-
-</div>
-
-## Whitebox Gesamtsystem
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-An dieser Stelle beschreiben Sie die Zerlegung des Gesamtsystems anhand
-des nachfolgenden Whitebox-Templates. Dieses enthält:
-
-- Ein Übersichtsdiagramm
-
-- die Begründung dieser Zerlegung
-
-- Blackbox-Beschreibungen der hier enthaltenen Bausteine. Dafür haben
-  Sie verschiedene Optionen:
-
-  - in *einer* Tabelle, gibt einen kurzen und pragmatischen Überblick
-    über die enthaltenen Bausteine sowie deren Schnittstellen.
-
-  - als Liste von Blackbox-Beschreibungen der Bausteine, gemäß dem
-    Blackbox-Template (siehe unten). Diese Liste können Sie, je nach
-    Werkzeug, etwa in Form von Unterkapiteln (Text), Unter-Seiten (Wiki)
-    oder geschachtelten Elementen (Modellierungswerkzeug) darstellen.
-
-- (optional:) wichtige Schnittstellen, die nicht bereits im
-  Blackbox-Template eines der Bausteine erläutert werden, aber für das
-  Verständnis der Whitebox von zentraler Bedeutung sind. Aufgrund der
-  vielfältigen Möglichkeiten oder Ausprägungen von Schnittstellen geben
-  wir hierzu kein weiteres Template vor. Im schlimmsten Fall müssen Sie
-  Syntax, Semantik, Protokolle, Fehlerverhalten, Restriktionen,
-  Versionen, Qualitätseigenschaften, notwendige Kompatibilitäten und
-  vieles mehr spezifizieren oder beschreiben. Im besten Fall kommen Sie
-  mit Beispielen oder einfachen Signaturen zurecht.
-
-</div>
-
-***\<Übersichtsdiagramm\>***
-
-Begründung  
-*\<Erläuternder Text\>*
-
-Enthaltene Bausteine  
-*\<Beschreibung der enthaltenen Bausteine (Blackboxen)\>*
-
-Wichtige Schnittstellen  
-*\<Beschreibung wichtiger Schnittstellen\>*
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-Hier folgen jetzt Erläuterungen zu Blackboxen der Ebene 1.
-
-Falls Sie die tabellarische Beschreibung wählen, so werden Blackboxen
-darin nur mit Name und Verantwortung nach folgendem Muster beschrieben:
-
-| **Name**         | **Verantwortung** |
-|------------------|-------------------|
-| *\<Blackbox 1\>* |  *\<Text\>*       |
-| *\<Blackbox 2\>* |  *\<Text\>*       |
-
-Falls Sie die ausführliche Liste von Blackbox-Beschreibungen wählen,
-beschreiben Sie jede wichtige Blackbox in einem eigenen
-Blackbox-Template. Dessen Überschrift ist jeweils der Namen dieser
-Blackbox.
-
-</div>
-
-### \<Name Blackbox 1\>
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-Beschreiben Sie die \<Blackbox 1\> anhand des folgenden
-Blackbox-Templates:
 
 - Zweck/Verantwortung
 
@@ -288,135 +181,37 @@ Blackbox-Templates:
 
 - (Optional) Offene Punkte/Probleme/Risiken
 
-</div>
 
-*\<Zweck/Verantwortung\>*
 
-*\<Schnittstelle(n)\>*
+### \<Name Schnittstelle 1 RIS Open Data\>
 
-*\<(Optional) Qualitäts-/Leistungsmerkmale\>*
 
-*\<(Optional) Ablageort/Datei(en)\>*
-
-*\<(Optional) Erfüllte Anforderungen\>*
-
-*\<(optional) Offene Punkte/Probleme/Risiken\>*
-
-### \<Name Blackbox 2\>
-
-*\<Blackbox-Template\>*
-
-### \<Name Blackbox n\>
-
-*\<Blackbox-Template\>*
-
-### \<Name Schnittstelle 1\>
-
-…​
-
-### \<Name Schnittstelle m\>
+### \<Name Schnittstelle OpenAI \>
 
 ## Ebene 2
 
-<div class="sidebar">
+### Chrome Extension (Whitebox)
 
-<div class="title">
+* Seitenleiste beschreiben
+* Content Script beschreiben
 
-</div>
+### Spring Boot Service (Whitebox)
 
-Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 1 als
-Whitebox.
+--> Whitebox-Template
 
-Welche Bausteine Ihres Systems Sie hier beschreiben, müssen Sie selbst
-entscheiden. Bitte stellen Sie dabei Relevanz vor Vollständigkeit.
-Skizzieren Sie wichtige, überraschende, riskante, komplexe oder
-besonders volatile Bausteine. Normale, einfache oder standardisierte
-Teile sollten Sie weglassen.
-
-</div>
-
-### Whitebox *\<Baustein 1\>*
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-…​zeigt das Innenleben von *Baustein 1*.
-
-</div>
-
-*\<Whitebox-Template\>*
-
-### Whitebox *\<Baustein 2\>*
-
-*\<Whitebox-Template\>*
-
-…​
-
-### Whitebox *\<Baustein m\>*
-
-*\<Whitebox-Template\>*
 
 ## Ebene 3
 
-<div class="sidebar">
 
-<div class="title">
-
-</div>
-
-Beschreiben Sie den inneren Aufbau (einiger) Bausteine aus Ebene 2 als
-Whitebox.
-
-Bei tieferen Gliederungen der Architektur kopieren Sie diesen Teil von
-arc42 für die weiteren Ebenen.
-
-</div>
-
-### Whitebox \<\_Baustein x.1\_\>
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-…​zeigt das Innenleben von *Baustein x.1*.
-
-</div>
+### Whitebox 2.1 Service für LLM Aufruf
 
 *\<Whitebox-Template\>*
 
 ### Whitebox \<\_Baustein x.2\_\>
 
-*\<Whitebox-Template\>*
 
-### Whitebox \<\_Baustein y.1\_\>
-
-*\<Whitebox-Template\>*
 
 # Laufzeitsicht
-
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Inhalt
-
-</div>
-
-Diese Sicht erklärt konkrete Abläufe und Beziehungen zwischen Bausteinen
-in Form von Szenarien aus den folgenden Bereichen:
-
-</div>
 
 - Wichtige Abläufe oder *Features*: Wie führen die Bausteine der
   Architektur die wichtigsten Abläufe durch?
@@ -424,74 +219,21 @@ in Form von Szenarien aus den folgenden Bereichen:
 - Interaktionen an kritischen externen Schnittstellen: Wie arbeiten
   Bausteine mit Nutzern und Nachbarsystemen zusammen?
 
-- Betrieb und Administration: Inbetriebnahme, Start, Stop.
+Form: Aktivitäts und Flussdiagram, Sequenzdiagram 
 
-- Fehler- und Ausnahmeszenarien
-
-Anmerkung: Das Kriterium für die Auswahl der möglichen Szenarien (d.h.
-Abläufe) des Systems ist deren Architekturrelevanz. Es geht nicht darum,
-möglichst viele Abläufe darzustellen, sondern eine angemessene Auswahl
-zu dokumentieren.
-
-<div class="formalpara">
-
-<div class="title">
-
-Motivation
-
-</div>
-
-Sie sollten verstehen, wie (Instanzen von) Bausteine(n) Ihres Systems
-ihre jeweiligen Aufgaben erfüllen und zur Laufzeit miteinander
-kommunizieren.
-
-</div>
-
-Nutzen Sie diese Szenarien in der Dokumentation hauptsächlich für eine
-verständlichere Kommunikation mit denjenigen Stakeholdern, die die
-statischen Modelle (z.B. Bausteinsicht, Verteilungssicht) weniger
-verständlich finden.
-
-<div class="formalpara">
-
-<div class="title">
-
-Form
-
-</div>
-
-Für die Beschreibung von Szenarien gibt es zahlreiche
-Ausdrucksmöglichkeiten. Nutzen Sie beispielsweise:
-
-</div>
-
-- Nummerierte Schrittfolgen oder Aufzählungen in Umgangssprache
-
-- Aktivitäts- oder Flussdiagramme
-
-- Sequenzdiagramme
-
-- BPMN (Geschäftsprozessmodell und -notation) oder EPKs
-  (Ereignis-Prozessketten)
-
-- Zustandsautomaten
-
-- …​
-
-<div class="formalpara">
-
-<div class="title">
-
-Weiterführende Informationen
-
-</div>
-
-Siehe [Laufzeitsicht](https://docs.arc42.org/section-6/) in der
-online-Dokumentation (auf Englisch!).
-
-</div>
-
-</div>
+```mermaid
+sequenceDiagram
+    Benutzer->>Browser: Öffnet RIS.bka.gv.at
+    Browser->>Extension: Aktiviert Extension anhand der URL.
+    Extension->>Shrinkwrap-API: Sendet geöffnete Dokumentennummer
+    Shrinkwrap-API->>RIS-API: Anfrage für Metadaten und Inhalt
+    RIS-API->>Shrinkwrap-API: Sendet Metadaten und Inhalt des Dokuments
+    Shrinkwrap-API->>OpenAI-API: Anfrage zur Datenaufbereitung
+    OpenAI-API->>Shrinkwrap-API: Antwortet Ergebnis in JSON-Format
+    Shrinkwrap-API->>Datenbank: Speichert Ergebnis zur Wiederverwendung
+    Shrinkwrap-API->>Extension: Anwortet das aufbereitete Ergebnis
+    Extension->>Browser: Zeigt Ergebnis direkt auf der RIS Seite an 
+```
 
 ## *\<Bezeichnung Laufzeitszenario 1\>*
 
@@ -502,11 +244,6 @@ online-Dokumentation (auf Englisch!).
 
 ## *\<Bezeichnung Laufzeitszenario 2\>*
 
-…​
-
-## *\<Bezeichnung Laufzeitszenario n\>*
-
-…​
 
 # Verteilungssicht
 

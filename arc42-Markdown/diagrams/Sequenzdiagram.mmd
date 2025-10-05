@@ -1,0 +1,11 @@
+sequenceDiagram
+    Benutzer->>Browser: Öffnet RIS.bka.gv.at
+    Browser->>Extension: Aktiviert Extension anhand der URL.
+    Extension->>Shrinkwrap-API: Sendet geöffnete Dokumentennummer
+    Shrinkwrap-API->>RIS-API: Anfrage für Metadaten und Inhalt
+    RIS-API->>Shrinkwrap-API: Sendet Metadaten und Inhalt des Dokuments
+    Shrinkwrap-API->>OpenAI-API: Anfrage zur Datenaufbereitung
+    OpenAI-API->>Shrinkwrap-API: Antwortet Ergebnis in JSON-Format
+    Shrinkwrap-API->>Datenbank: Speichert Ergebnis zur Wiederverwendung
+    Shrinkwrap-API->>Extension: Anwortet das aufbereitete Ergebnis
+    Extension->>Browser: Zeigt Ergebnis direkt auf der RIS Seite an 
