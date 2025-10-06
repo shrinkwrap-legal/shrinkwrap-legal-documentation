@@ -116,8 +116,6 @@ Module, Komponenten, Subsysteme, Klassen, Schnittstellen, Pakete, Bibliotheken, 
 
 ## Ebene 1 Gesamtsystem
 
-**Ebene 1** ist die Whitebox-Beschreibung des Gesamtsystems, zusammen
-mit Blackbox-Beschreibungen der darin enthaltenen Bausteine.
 
 ```mermaid
 C4Component
@@ -146,27 +144,24 @@ C4Component
     UpdateRelStyle(api, openai, $offsetX="40", $offsetY="-40")
 ```
 
-### Chrome Extension 
+### Chrome Extension
+Die Chrome Extension dient als Benutzeroberfläche für die Anwender und integriert sich direkt in die RIS Webseite.
 
-### Spring Boot Service 
+### Spring Boot Service
+
+Das Spring Boot Service ist die zentrale Komponente zur Kommunikation mit allen anderen Systemen wie der Datenbank, der RIS Schnittstelle, der OpenAI Schnittstelle und der Benutzeroberfläche.
+
+### RIS SOAP Service
+Die RIS Schnittstelle wird für das Lesen der Inhalte und Metadaten von Judikaturdokumenten verwendet. 
+
+Die Beschreibung dieser Schnittstelle und die technische Service Description können über den Link <https://data.bka.gv.at/ris/ogd/v2.6/ogdrisservice.asmx> abgerufen werden.
 
 
-- Zweck/Verantwortung
+### OpenAI API
 
-- Schnittstelle(n), sofern diese nicht als eigenständige Beschreibungen
-  herausgezogen sind. Hierzu gehören eventuell auch Qualitäts- und
-  Leistungsmerkmale dieser Schnittstelle.
+### Datenbank
 
-- (Optional) Qualitäts-/Leistungsmerkmale der Blackbox, beispielsweise
-  Verfügbarkeit, Laufzeitverhalten o. Ä.
-
-- (Optional) Ablageort/Datei(en)
-
-- (Optional) Erfüllte Anforderungen, falls Sie Traceability zu
-  Anforderungen benötigen.
-
-- (Optional) Offene Punkte/Probleme/Risiken
-
+Die Datenbank dient zum Speichern heruntergeladener RIS Dokumente und berechneter Ergebnisse.
 
 
 ### \<Name Schnittstelle 1 RIS Open Data\>
@@ -233,122 +228,13 @@ sequenceDiagram
 
 # Verteilungssicht
 
-<div class="sidebar">
 
-<div class="title">
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Inhalt
-
-</div>
-
-Die Verteilungssicht beschreibt:
-
-</div>
-
-1.  die technische Infrastruktur, auf der Ihr System ausgeführt wird,
-    mit Infrastrukturelementen wie Standorten, Umgebungen, Rechnern,
-    Prozessoren, Kanälen und Netztopologien sowie sonstigen
-    Bestandteilen, und
-
-2.  die Abbildung von (Software-)Bausteinen auf diese Infrastruktur.
-
-Häufig laufen Systeme in unterschiedlichen Umgebungen, beispielsweise
-Entwicklung-/Test- oder Produktionsumgebungen. In solchen Fällen sollten
-Sie alle relevanten Umgebungen aufzeigen.
-
-Nutzen Sie die Verteilungssicht insbesondere dann, wenn Ihre Software
-auf mehr als einem Rechner, Prozessor, Server oder Container abläuft
-oder Sie Ihre Hardware sogar selbst konstruieren.
-
-Aus Softwaresicht genügt es, auf die Aspekte zu achten, die für die
-Softwareverteilung relevant sind. Insbesondere bei der
-Hardwareentwicklung kann es notwendig sein, die Infrastruktur mit
-beliebigen Details zu beschreiben.
-
-<div class="formalpara">
-
-<div class="title">
-
-Motivation
-
-</div>
-
-Software läuft nicht ohne Infrastruktur. Diese zugrundeliegende
-Infrastruktur beeinflusst Ihr System und/oder querschnittliche
-Lösungskonzepte, daher müssen Sie diese Infrastruktur kennen.
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Form
-
-</div>
-
-Das oberste Verteilungsdiagramm könnte bereits in Ihrem technischen
-Kontext enthalten sein, mit Ihrer Infrastruktur als EINE Blackbox. Jetzt
-zoomen Sie in diese Infrastruktur mit weiteren Verteilungsdiagrammen
-hinein:
-
-</div>
-
-- Die UML stellt mit Verteilungsdiagrammen (Deployment diagrams) eine
-  Diagrammart zur Verfügung, um diese Sicht auszudrücken. Nutzen Sie
-  diese, evtl. auch geschachtelt, wenn Ihre Verteilungsstruktur es
-  verlangt.
-
-- Falls Ihre Infrastruktur-Stakeholder andere Diagrammarten bevorzugen,
-  die beispielsweise Prozessoren und Kanäle zeigen, sind diese hier
-  ebenfalls einsetzbar.
-
-<div class="formalpara">
-
-<div class="title">
-
-Weiterführende Informationen
-
-</div>
-
-Siehe [Verteilungssicht](https://docs.arc42.org/section-7/) in der
-online-Dokumentation (auf Englisch!).
-
-</div>
-
-</div>
+- Beschreibung Dockerfile 
+- Beschreibung docker-compose 
+- Deployment Diagram
 
 ## Infrastruktur Ebene 1
 
-<div class="sidebar">
-
-<div class="title">
-
-</div>
-
-An dieser Stelle beschreiben Sie (als Kombination von Diagrammen mit
-Tabellen oder Texten):
-
-- die Verteilung des Gesamtsystems auf mehrere Standorte, Umgebungen,
-  Rechner, Prozessoren o. Ä., sowie die physischen Verbindungskanäle
-  zwischen diesen,
-
-- wichtige Begründungen für diese Verteilungsstruktur,
-
-- Qualitäts- und/oder Leistungsmerkmale dieser Infrastruktur,
-
-- Zuordnung von Softwareartefakten zu Bestandteilen der Infrastruktur
-
-Für mehrere Umgebungen oder alternative Deployments kopieren Sie diesen
-Teil von arc42 für alle wichtigen Umgebungen/Varianten.
-
-</div>
 
 ***\<Übersichtsdiagramm\>***
 
@@ -377,16 +263,6 @@ Für jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene 1.
 </div>
 
 ### *\<Infrastrukturelement 1\>*
-
-*\<Diagramm + Erläuterungen\>*
-
-### *\<Infrastrukturelement 2\>*
-
-*\<Diagramm + Erläuterungen\>*
-
-…​
-
-### *\<Infrastrukturelement n\>*
 
 *\<Diagramm + Erläuterungen\>*
 
