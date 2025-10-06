@@ -7,33 +7,19 @@
 
 ## Aufgabenstellung
 
-- kurzer Textg
-- eventuell Use-Case
+Rechtstexte sind in Österreich nur schwer verständlich, Gerichtsurteile oft sogar noch schwerer. Zweitere sind noch dazu sehr umfangreich, und relevante Informationen gut versteckt. Durch eine Kombination aus der Technologie hinter ChatGPT und einer Browser-Erweiterung möchten wir das RIS zugänglicher machen und insbesondere die Recherche von Urteilen stark vereinfachen. Urteile sollen damit automatisch zusammengefasst werden.
 
-Shrinkwrap Legal ist eine Browser Extension für Chrome, Edge und Firefox, welche Judikate aus dem RIS (Rechtsinformationssystem) der Republik Österreich vereinfacht aufbereitet und zusammenfasst. Diese Datenaufbereitung erfolgt mit großen Sprachmodellen (LLM) über die OpenAI Schnittstelle.
+Gerichtsurteile sind lang, komplex und folgen an sich einer relativ genauen Struktur (Spruch, Feststellungen, Rechtliche Beurteilung, Beweiswürdigung, Kosten). Durch die Nutzung von GPT-Technologie lassen sich Urteilszusammenfassungen automatisch generieren und für verschiedene Zielgruppen aufbereiten. Durch Nutzung von Browser-Erweiterungen stehen diese direkt bei Nutzung des RIS zur Verfügung.
 
 
 ## Qualitätsziele
 
-1. Performance und Skalierbarkeit 
-
-2. Zuverlässigkeit und Verfügbarkeit 
-
-3. Sicherheit 
- - Es soll kein eigener Inhalt an die OpenAI Schnittstelle weitergeleitet werden können 
- 
- 4. Wartbarkeit und Entwicklungsfähigkeit 
-
-
-
-Hier ein Überblick möglicher Themen (basierend auf dem ISO 25010
-Standard):
-<div>
-<figure>
-<img src="images/01_2_iso-25010-topics-EN-2023.drawio.png"
-alt="Kategorien von Qualitätsanforderungen" />
-</figure>
-</div>
+| Ziel | Beschreibung |
+|-----|-----|
+| Performance | Die Anwendung zeigt Zusammenfassungen direkt bei den Suchergebnissen an. Damit diese Ergebnisse schnell angezeigt werden, werden einmal berechnete Zusammenfassungen in einer Datenbank gespeichert.  |
+| Effizienz | Die Erstellung von Zusammenfassungen mittels generativer KI ist rechen- und kostenaufwendig. Für einen effektiven Einsatz des KI-Services, werden einmal berechnete Ergebnisse in einer Datenbank gespeichert. |
+| Sicherheit | Die Anwendung zeigt über eine Browser-Extension eigene KI-generierte Inhalte in einer Website an. Zur Sicherstellung das keine anderen Inhalte an das KI-Service kommen, werden diese nicht direkt aus der Website ausgelesen sondern über die Open Data Schnittstelle des Anbieters gelesen. |
+| Benutzbarkeit |  |
 
 
 ## Stakeholder
@@ -406,130 +392,42 @@ Für jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene 1.
 
 # Querschnittliche Konzepte
 
+## Datenbankdiagramm
 
+```mermaid
+erDiagram
+    CASELAW o|--|| CASELAW_ANALYSIS : references
+    CASELAW {
+      bigint id
+      varchar application_type
+      varchar case_number
+      varchar court
+      timestamp created
+      date decision_date
+      varchar decision_type
+      varchar docnumber 
+      varchar ecli
+      text html
+      varchar html_url
+      date last_cahnged
+      json metadata
+      varchar organ
+      date published
+      timestamp updated
+      url varchar
+    }
+    CASELAW_ANALYSIS {
+      bigint id
+      timestamp created 
+      text full_text
+      oid sentences 
+      timestamp updated 
+      bigint word_count
+      bigint case_law_id
 
-<div class="sidebar">
+    }
+```
 
-<div class="title">
-
-</div>
-
-<div class="formalpara">
-
-<div class="title">
-
-Inhalt
-
-</div>
-
-Dieser Abschnitt beschreibt übergreifende, prinzipielle Regelungen und
-Lösungsansätze, die an mehreren Stellen (=*querschnittlich*) relevant
-sind.
-
-</div>
-
-Solche Konzepte betreffen oft mehrere Bausteine. Dazu können vielerlei
-Themen gehören, wie beispielsweise die Themen aus dem nachfolgenden
-Diagramm:
-
-<figure>
-<img src="images/08-concepts-DE.drawio.png"
-alt="Mögliche Themen für querschnittliche Konzepte" />
-</figure>
-
-<div class="formalpara">
-
-<div class="title">
-
-Motivation
-
-</div>
-
-Konzepte bilden die Grundlage für *konzeptionelle Integrität*
-(Konsistenz, Homogenität) der Architektur und damit eine wesentliche
-Grundlage für die innere Qualität Ihrer Systeme.
-
-</div>
-
-Dieser Abschnitt im Template ist der richtige Ort für die konsistente
-Behandlung solcher Themen.
-
-Viele solche Konzepte beeinflussen oder beziehen sich auf mehrerer Ihrer
-Bausteine.
-
-<div class="formalpara">
-
-<div class="title">
-
-Form
-
-</div>
-
-Kann vielfältig sein:
-
-</div>
-
-- Konzeptpapiere mit beliebiger Gliederung,
-
-- beispielhafte Implementierung speziell für technische Konzepte,
-
-- übergreifende Modelle/Szenarien mit Notationen, die Sie auch in den
-  Architektursichten nutzen,
-
-<div class="formalpara">
-
-<div class="title">
-
-Struktur
-
-</div>
-
-Wählen Sie **nur** die wichtigsten Themen für Ihr System und erklären
-das jeweilige Konzept dann unter einer Level-2 Überschrift dieser
-Sektion (z.B. 8.1, 8.2 etc).
-
-</div>
-
-Beschränken Sie sich auf die wichtigen, und versuchen **auf keinen
-Fall** alle oben dargestellten Themen zu bearbeiten.
-
-<div class="formalpara">
-
-<div class="title">
-
-Weiterführende Informationen
-
-</div>
-
-Einige Themen innerhalb von Systemen betreffen oft mehrere Bausteine,
-Hardwareelemente oder Prozesse. Es könnte einfacher sein, solche
-*Querschnittsthemen* an einer zentralen Stelle zu kommunizieren oder zu
-dokumentieren, anstatt sie in der Beschreibung der betreffenden
-Bausteine, Hardwareelemente oder Entwicklungsprozesse zu wiederholen.
-
-</div>
-
-Bestimmte Konzepte können **alle** Elemente eines Systems betreffen,
-andere sind vielleicht nur für einige wenige relevant.
-
-Siehe [Querschnittliche Konzepte](https://docs.arc42.org/section-8/) in
-der online-Dokumentation (auf Englisch).
-
-</div>
-
-## *\<Konzept 1\>*
-
-*\<Erklärung\>*
-
-## *\<Konzept 2\>*
-
-*\<Erklärung\>*
-
-…​
-
-## *\<Konzept n\>*
-
-*\<Erklärung\>*
 
 # Architekturentscheidungen
 
@@ -594,14 +492,13 @@ In Kurzform (bevorzugt im Q42-Modell):
 
 # Risiken und technische Schulden
 
-## Risiken 
+## Risiken
 
-- geordnete Liste der erkannten Risiken 
-- Zeitliche Verzögerung 
-- Schlechte ERgebnisse der OpenAI Resultate 
-- Maßnahmen zur Risikovermeidung und Minimierung 
-- Bewertung der Ergebnisse des OpenAI Resultats 
-
+| Risiko | Entscheidung | Eintrittswahrscheinlichkeit | Auswirkung | Status |
+|-----|-----|-----|-----|-----|
+| Zeitliche Verzögerung | Regelmäßige Treffen zur Umsetzung | M | M | Geschlossen |
+| Unzufriedenstellende Ergebnisse | Hinzuziehen von Expertenwissen beim Prompting | H | M | Geschlossen |
+|  |  |  |  |  |
 
 # Glossar
 
