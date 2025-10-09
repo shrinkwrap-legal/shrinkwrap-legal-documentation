@@ -218,53 +218,22 @@ sequenceDiagram
 
 ## *\<Bezeichnung Laufzeitszenario 1\>*
 
-- \<hier Laufzeitdiagramm oder Ablaufbeschreibung einfügen\>
-
-- \<hier Besonderheiten bei dem Zusammenspiel der Bausteine in diesem
-  Szenario erläutern\>
-
-## *\<Bezeichnung Laufzeitszenario 2\>*
 
 
 # Verteilungssicht
 
 
+## Deployment Diagram
+
+![Deploymentdiagram](./images/deploymentdiagram.drawio.png)
+
+## Deployment-Prozess
 - Beschreibung Dockerfile 
 - Beschreibung docker-compose 
-- Deployment Diagram
-
-## Infrastruktur Ebene 1
-
-
-***\<Übersichtsdiagramm\>***
-
-Begründung  
-*\<Erläuternder Text\>*
-
-Qualitäts- und/oder Leistungsmerkmale  
-*\<Erläuternder Text\>*
-
-Zuordnung von Bausteinen zu Infrastruktur  
-*\<Beschreibung der Zuordnung\>*
 
 ## Infrastruktur Ebene 2
 
-<div class="sidebar">
 
-<div class="title">
-
-</div>
-
-An dieser Stelle können Sie den inneren Aufbau (einiger)
-Infrastrukturelemente aus Ebene 1 beschreiben.
-
-Für jedes Infrastrukturelement kopieren Sie die Struktur aus Ebene 1.
-
-</div>
-
-### *\<Infrastrukturelement 1\>*
-
-*\<Diagramm + Erläuterungen\>*
 
 # Querschnittliche Konzepte
 
