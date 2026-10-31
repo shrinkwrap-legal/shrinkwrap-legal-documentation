@@ -1,9 +1,3 @@
-:jbake-title: Glossar
-:jbake-type: page_toc
-:jbake-status: published
-:jbake-menu: arc42
-:jbake-order: 12
-:filename: \modules\ROOT\pages\12_glossary.adoc
 ifndef::imagesdir[:imagesdir: ../assets/images]
 
 ifndef::optimize-content[]
@@ -12,7 +6,7 @@ endif::optimize-content[]
 
 
 [[section-glossary]]
-== Glossar
+= Glossar
 
 ifdef::arc42help[]
 

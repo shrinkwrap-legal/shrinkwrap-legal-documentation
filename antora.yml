@@ -1,0 +1,23 @@
+name: shrinkwrap.legal-documentation
+title: Shrinkwrap.Legal Documentation
+version: latest
+start_page: index.adoc
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    optimize-content: true
+    revnumber: 8.2 DE
+    revdate: Januar 2023
+    revremark: (basiert auf AsciiDoc Version)
+    # Deutsche Beschriftungen (gelten site-weit fuer alle Seiten)
+    toc-title: Inhaltsverzeichnis
+    appendix-caption: Anhang
+    caution-caption: Achtung
+    example-caption: Beispiel
+    figure-caption: Abbildung
+    important-caption: Wichtig
+    note-caption: Hinweis
+    table-caption: Tabelle
+    tip-caption: Tip
+    warning-caption: Warnung

@@ -1,9 +1,3 @@
-:jbake-title: Bausteinsicht
-:jbake-type: page_toc
-:jbake-status: published
-:jbake-menu: arc42
-:jbake-order: 5
-:filename: \modules\ROOT\pages\05_building_block_view.adoc
 ifndef::imagesdir[:imagesdir: ../assets/images]
 
 ifndef::optimize-content[]
@@ -12,13 +6,13 @@ endif::optimize-content[]
 
 
 [[section-building-block-view]]
-== Bausteinsicht
+= Bausteinsicht
 
 ifdef::arc42help[]
 
 endif::arc42help[]
 
-=== Whitebox Gesamtsystem
+== Whitebox Gesamtsystem
 
 ifdef::arc42help[]
 
@@ -36,7 +30,7 @@ ifdef::arc42help[]
 
 endif::arc42help[]
 
-==== <Name Blackbox 1>
+=== <Name Blackbox 1>
 
 ifdef::arc42help[]
 
@@ -54,28 +48,28 @@ _<(Optional) Erfüllte Anforderungen>_
 
 _<(optional) Offene Punkte/Probleme/Risiken>_
 
-==== <Name Blackbox 2>
+=== <Name Blackbox 2>
 
 _<Blackbox-Template>_
 
-==== <Name Blackbox n>
+=== <Name Blackbox n>
 
 _<Blackbox-Template>_
 
 
-==== <Name Schnittstelle 1>
+=== <Name Schnittstelle 1>
 
 ...
 
-==== <Name Schnittstelle m>
+=== <Name Schnittstelle m>
 
-=== Ebene 2
+== Ebene 2
 
 ifdef::arc42help[]
 
 endif::arc42help[]
 
-==== Whitebox _<Baustein 1>_
+=== Whitebox _<Baustein 1>_
 
 ifdef::arc42help[]
 
@@ -83,23 +77,23 @@ endif::arc42help[]
 
 _<Whitebox-Template>_
 
-==== Whitebox _<Baustein 2>_
+=== Whitebox _<Baustein 2>_
 
 _<Whitebox-Template>_
 
 ...
 
-==== Whitebox _<Baustein m>_
+=== Whitebox _<Baustein m>_
 
 _<Whitebox-Template>_
 
-=== Ebene 3
+== Ebene 3
 
 ifdef::arc42help[]
 
 endif::arc42help[]
 
-==== Whitebox <_Baustein x.1_>
+=== Whitebox <_Baustein x.1_>
 
 ifdef::arc42help[]
 
@@ -107,10 +101,10 @@ endif::arc42help[]
 
 _<Whitebox-Template>_
 
-==== Whitebox <_Baustein x.2_>
+=== Whitebox <_Baustein x.2_>
 
 _<Whitebox-Template>_
 
-==== Whitebox <_Baustein y.1_>
+=== Whitebox <_Baustein y.1_>
 
 _<Whitebox-Template>_

@@ -1,9 +1,3 @@
-:jbake-title: Qualitätsanforderungen
-:jbake-type: page_toc
-:jbake-status: published
-:jbake-menu: arc42
-:jbake-order: 10
-:filename: \modules\ROOT\pages\10_quality_requirements.adoc
 ifndef::imagesdir[:imagesdir: ../assets/images]
 
 ifndef::optimize-content[]
@@ -12,7 +6,7 @@ endif::optimize-content[]
 
 
 [[section-quality-scenarios]]
-== Qualitätsanforderungen
+= Qualitätsanforderungen
 
 ifdef::arc42help[]
 
@@ -22,13 +16,13 @@ endif::arc42help[]
 
 Siehe https://docs.arc42.org/section-10/[Qualitätsanforderungen] in der online-Dokumentation (auf Englisch!).
 
-=== Qualitätsbaum
+== Qualitätsbaum
 
 ifdef::arc42help[]
 
 endif::arc42help[]
 
-=== Qualitätsszenarien
+== Qualitätsszenarien
 
 ifdef::arc42help[]
 

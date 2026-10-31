@@ -1,0 +1,28 @@
+<style>
+  /* Primaerfarbe der Shrinkwrap.Legal Dokumentation */
+  :root {
+    --sw-primary: #00415d;
+    --sw-primary-dark: #002e42;
+  }
+
+  /* Obere Navigationsleiste in Markenfarbe (Text ist bereits weiss) */
+  .navbar {
+    background: var(--sw-primary);
+  }
+
+  /* Inhalts-Links */
+  .doc a {
+    color: var(--sw-primary);
+  }
+  .doc a:hover {
+    color: var(--sw-primary-dark);
+  }
+
+  /* Inhaltsverzeichnis (TOC) */
+  .toc .toc-menu a:hover {
+    color: var(--sw-primary);
+  }
+  .toc .toc-menu a.is-active {
+    border-left-color: var(--sw-primary);
+  }
+</style>

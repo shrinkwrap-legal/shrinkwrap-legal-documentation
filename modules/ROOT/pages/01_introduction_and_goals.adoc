@@ -1,9 +1,3 @@
-:jbake-title: Einführung und Ziele
-:jbake-type: page_toc
-:jbake-status: published
-:jbake-menu: arc42
-:jbake-order: 1
-:filename: \modules\ROOT\pages\01_introduction_and_goals.adoc
 ifndef::imagesdir[:imagesdir: ../assets/images]
 
 ifndef::optimize-content[]
@@ -12,7 +6,7 @@ endif::optimize-content[]
 
 
 [[section-introduction-and-goals]]
-==	Einführung und Ziele
+= Einführung und Ziele
 
 image:shrinkwrap.svg[]
 
@@ -24,7 +18,7 @@ ifdef::arc42help[]
 
 endif::arc42help[]
 
-=== Aufgabenstellung
+== Aufgabenstellung
 
 Shrinkwrap Legal ist eine Browser Extension für Chrome, welche Judikate aus dem RIS (Rechtsinformationssystem) der Republik Österreich zusammenfasst.
 
@@ -32,13 +26,13 @@ ifdef::arc42help[]
 
 endif::arc42help[]
 
-=== Qualitätsziele
+== Qualitätsziele
 
 ifdef::arc42help[]
 
 endif::arc42help[]
 
-=== Stakeholder
+== Stakeholder
 
 ifdef::arc42help[]
 

@@ -1,0 +1,18 @@
+ifndef::imagesdir[:imagesdir: ../assets/images]
+
+ifndef::optimize-content[]
+:toc:
+endif::optimize-content[]
+
+
+[[section-technical-risks]]
+= Risiken und technische Schulden
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+
+== Risiken
+
+=== Verarbeitung der Judikate

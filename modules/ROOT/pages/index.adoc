@@ -7,13 +7,9 @@
 // configure DE settings for asciidoc
 include::config.adoc[]
 
-ifndef::optimize-content[]
-= image:arc42-logo.png[arc42] Template
-endif::optimize-content[]
+= Shrinkwrap.Legal – Architekturdokumentation
 
-ifdef::optimize-content[]
 image:arc42-logo.png[arc42]
-endif::optimize-content[]
 
 :revnumber: 8.2 DE
 :revdate: Januar 2023

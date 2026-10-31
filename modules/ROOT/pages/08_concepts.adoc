@@ -1,0 +1,25 @@
+ifndef::imagesdir[:imagesdir: ../assets/images]
+
+ifndef::optimize-content[]
+:toc:
+endif::optimize-content[]
+
+
+[[section-concepts]]
+= Querschnittliche Konzepte
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+== Datenbankmodell
+
+
+== Benutzeroberfläche
+
+
+== HTML Vorverarbeitung
+
+== OpenAI Prompting
+
+

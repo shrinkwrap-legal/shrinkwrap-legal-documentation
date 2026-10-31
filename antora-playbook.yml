@@ -1,0 +1,33 @@
+antora:
+  extensions:
+    - require: '@sntke/antora-mermaid-extension'
+      mermaid_library_url: https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs
+      mermaid_initialize_options:
+        start_on_load: true
+        theme: base
+        theme_variables:
+          primary_color: '#00415d'
+          primary_text_color: '#ffffff'
+          primary_border_color: '#002e42'
+          line_color: '#5d5d5d'
+
+site:
+  title: Shrinkwrap Legal Documentation
+  start_page: shrinkwrap.legal-documentation::index.adoc
+  url: https://shrinkwrap-legal.github.io/shrinkwrap-legal-documentation
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_paths:
+        - .
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+
+output:
+  dir: ./build/site

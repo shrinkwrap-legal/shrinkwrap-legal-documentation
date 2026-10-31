@@ -1,9 +1,3 @@
-:jbake-title: Lösungsstrategie
-:jbake-type: page_toc
-:jbake-status: published
-:jbake-menu: arc42
-:jbake-order: 4
-:filename: \modules\ROOT\pages\04_solution_strategy.adoc
 ifndef::imagesdir[:imagesdir: ../assets/images]
 
 ifndef::optimize-content[]
@@ -12,7 +6,7 @@ endif::optimize-content[]
 
 
 [[section-solution-strategy]]
-== Lösungsstrategie
+= Lösungsstrategie
 
 ifdef::arc42help[]
 
@@ -23,7 +17,7 @@ endif::arc42help[]
 Die Hauptaufgabe des Systems ist es, Judikate über die RIS Schnittstelle zu laden und eine Analyse der Inhalte durchzuführen.
 
 
-=== Text Processing Pipeline zeichnen
+== Text Processing Pipeline zeichnen
 
 ** Download HTML von RIS
 ** HTML cleanup durchführen

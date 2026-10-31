@@ -1,0 +1,21 @@
+ifndef::imagesdir[:imagesdir: ../assets/images]
+
+ifndef::optimize-content[]
+:toc:
+endif::optimize-content[]
+
+
+[[section-runtime-view]]
+= Laufzeitsicht
+
+ifdef::arc42help[]
+
+endif::arc42help[]
+
+== Automatische Aufbereitung neuer Judikate
+
+--> Sequenzdiagramm
+
+== Anzeigen der aufbereiteten Judikate in der Chrome Extension
+
+

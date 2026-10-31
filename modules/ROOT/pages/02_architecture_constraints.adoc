@@ -1,9 +1,3 @@
-:jbake-title: Randbedingungen
-:jbake-type: page_toc
-:jbake-status: published
-:jbake-menu: arc42
-:jbake-order: 2
-:filename: \modules\ROOT\pages\02_architecture_constraints.adoc
 ifndef::imagesdir[:imagesdir: ../assets/images]
 
 ifndef::optimize-content[]
@@ -12,15 +6,15 @@ endif::optimize-content[]
 
 
 [[section-architecture-constraints]]
-== Randbedingungen
+= Randbedingungen
 
 ifdef::arc42help[]
 
 endif::arc42help[]
 
-=== Technische Randbedingungen
+== Technische Randbedingungen
 
-=== Organisatorische Randbedingungen
+== Organisatorische Randbedingungen
 
 
 |===
