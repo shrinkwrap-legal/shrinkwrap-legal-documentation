@@ -5,6 +5,7 @@
   "description": "Antora documentation site for Shrinkwrap Legal",
   "scripts": {
     "build": "antora --fetch antora-playbook.yml",
+    "build:local": "antora antora-playbook.local.yml",
     "serve": "http-server build/site -c-1 -o"
   },
   "devDependencies": {

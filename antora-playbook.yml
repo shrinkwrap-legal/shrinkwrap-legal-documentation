@@ -13,15 +13,38 @@ antora:
 
 site:
   title: Shrinkwrap Legal Documentation
-  start_page: shrinkwrap.legal-documentation::index.adoc
+  start_page: ROOT::index.adoc
   url: https://shrinkwrap-legal.github.io/shrinkwrap-legal-documentation
 
 content:
   sources:
+    # arc42-Gesamtdokumentation (dieses Repository)
     - url: .
       branches: HEAD
       start_paths:
         - .
+    # Entwickler-Dokumentation der API
+    - url: https://github.com/shrinkwrap-legal/shrinkwrap-legal-api.git
+      branches: main
+      start_path: docs
+    # Entwickler-Dokumentation der Browser-Extension
+    - url: https://github.com/shrinkwrap-legal/shrinkwrap-legal-extension.git
+      branches: main
+      start_path: docs
+
+asciidoc:
+  attributes:
+    # Deutsche Beschriftungen fuer alle Komponenten der Site
+    toc-title: Inhaltsverzeichnis
+    appendix-caption: Anhang
+    caution-caption: Achtung
+    example-caption: Beispiel
+    figure-caption: Abbildung
+    important-caption: Wichtig
+    note-caption: Hinweis
+    table-caption: Tabelle
+    tip-caption: Tipp
+    warning-caption: Warnung
 
 ui:
   bundle:

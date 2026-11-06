@@ -35,6 +35,13 @@ endif::backend-html5[]
 
 include::about-arc42.adoc[]
 
+== Weitere Dokumentation
+
+Ergänzend zu dieser Architekturdokumentation gibt es Entwickler-Dokumentation zu den einzelnen Repositories:
+
+* xref:api::index.adoc[Shrinkwrap.Legal API] – Backend (Spring Boot): Entwicklung, Konfiguration, REST-API, MCP-Server, Datenimport, Betrieb
+* xref:extension::index.adoc[Shrinkwrap.Legal Browser-Extension] – Frontend (WebExtension): Entwicklung, Konfiguration, RIS-Integration, API-Client
+
 ifndef::optimize-content[]
 
 

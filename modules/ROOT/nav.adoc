@@ -21,3 +21,7 @@
 * xref:11_technical_risks.adoc[11. Risiken und technische Schulden]
 
 * xref:12_glossary.adoc[12. Glossar]
+
+* Repositories
+** xref:api::index.adoc[Shrinkwrap.Legal API]
+** xref:extension::index.adoc[Browser-Extension]
